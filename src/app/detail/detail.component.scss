@@ -1,0 +1,42 @@
+.title {
+  text-transform: capitalize;
+  padding-bottom: 20px;
+  padding-top: 23px;
+  /* text-align: center; */
+  display: flex;
+  margin-left: 108px;
+}
+
+.bg-image {
+  height: auto;
+  width: auto;
+  border-radius: 8px;
+  background-clip: border-box;
+}
+
+.icon {
+  height: 50px;
+}
+
+.images {
+  height: 250px;
+  width: 300px;
+}
+
+.back {
+  float: left;
+  background: #6a1b9a;
+  color: #fff;
+  margin-top: 20px;
+  margin-right: -10px;
+  cursor: pointer;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-right: 10px;
+
+  .voltar {
+    margin-top: 1px;
+    font-weight: 600;
+    float: left;
+  }
+}

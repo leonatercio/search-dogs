@@ -1,0 +1,24 @@
+<nav>
+  <div class="nav-wrapper purple darken-3">
+    <a class="brand-logo"><img class="icon" src="./../../assets/icon.png" /></a>
+  </div>
+</nav>
+<div class="section"></div>
+<main class="center-align">
+  <div class="section"></div>
+  <div class="container">
+    <div class="z-depth-1 grey lighten-4 row"
+      style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
+
+      <h5 class="purple-text">SELECIONE UMA RAÇA</h5>
+
+      <select class="browser-default" (change)="selectedBreed($event.target.value)">
+        <option value="" disabled selected>Escolha uma opção</option>
+        <option *ngFor="let dog of dogs" (value)="dog" class="title">{{ dog }}</option>
+      </select>
+      <br>
+
+    </div>
+    <div class="section"></div>
+  </div>
+</main>

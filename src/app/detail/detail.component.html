@@ -1,0 +1,25 @@
+<nav>
+  <div class="nav-wrapper purple darken-3">
+    <a class="brand-logo"><img class="icon" src="./../../assets/icon.png" /></a>
+  </div>
+</nav>
+<div class="section"></div>
+<main class="center-align">
+  <div class="section"></div>
+  <div class="container">
+    <div class="z-depth-1 grey lighten-4 row">
+      <a class="back" onclick="window.history.back()"><span class="voltar">Voltar</span> <i class="material-icons">arrow_back</i></a>
+
+      <h5 class="purple-text title">Raça: {{ dog }}</h5>
+
+      <div *ngFor="let image of images; let i = index">
+        <div class="col s12 m4 l3">
+          <img class="images responsive-img" [defaultImage]="defaultImage" [errorImage]="errorImage" [lazyLoad]="image">
+        </div>
+      </div>
+      <br>
+
+    </div>
+    <div class="section"></div>
+  </div>
+</main>
